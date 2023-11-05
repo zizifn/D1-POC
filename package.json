@@ -1,0 +1,25 @@
+{
+	"name": "d1-poc",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"dev-qa": "wrangler dev --remote --env qa",
+		"start": "wrangler dev",
+		"generate": "drizzle-kit generate:sqlite --schema=src/schema.ts",
+		"up": "drizzle-kit up:sqlite --schema=src/schema.ts",
+		"migrations-local": "wrangler d1 migrations list test-poc --local",
+		"apply-local": "wrangler d1 migrations apply test-poc --local",
+		"migrations-qa": "wrangler d1 migrations list test-poc --env qa"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20231025.0",
+		"drizzle-kit": "^0.19.13",
+		"typescript": "^5.2.2",
+		"wrangler": "^3.15.0"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.28.6"
+	}
+}

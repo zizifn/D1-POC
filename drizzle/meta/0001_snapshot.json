@@ -1,0 +1,54 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "id": "8ab4f621-0178-484c-b3b9-7a61f4b9993a",
+  "prevId": "4e81abd8-976c-4df8-bd30-91bd3cd05fb2",
+  "tables": {
+    "Customers": {
+      "name": "Customers",
+      "columns": {
+        "CustomerId": {
+          "name": "CustomerId",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "CompanyName": {
+          "name": "CompanyName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "''"
+        },
+        "ContactName": {
+          "name": "ContactName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "''"
+        },
+        "address": {
+          "name": "address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "''"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
